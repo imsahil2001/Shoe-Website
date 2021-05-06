@@ -1,0 +1,194 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fbf6f0;
+  overflow-x: hidden;
+}
+
+.svg {
+  position: absolute;
+  top: -138px;
+  left: -100px;
+  -webkit-transform: rotateZ(-9deg);
+          transform: rotateZ(-9deg);
+  z-index: -1;
+  width: 1900px;
+}
+
+.main h1 {
+  margin-top: 70px;
+  margin-left: 70px;
+  color: #fbf6f0;
+  font-size: 50px;
+  padding-bottom: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 10px solid #fbf6f0;
+  width: 300px;
+}
+
+.main .refresh {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 15.5px;
+  position: absolute;
+  top: 150px;
+  right: 100px;
+  text-decoration: none;
+  color: white;
+  border-radius: 3px;
+  letter-spacing: .5px;
+  z-index: 5;
+  padding: 10px 30px;
+  background: #056676;
+  -webkit-box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.18);
+          box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+.main .refresh:active {
+  background: #045967;
+}
+
+.main .refreshbar {
+  position: absolute;
+  right: 80px;
+  top: 0px;
+  width: 10px;
+  height: 20rem;
+  background: #f8efe4;
+}
+
+.main .refreshbar_2 {
+  position: absolute;
+  right: 40px;
+  top: 0px;
+  width: 10px;
+  height: 30rem;
+  background: #f8efe4;
+}
+
+.display {
+  position: relative;
+}
+
+.display .table {
+  position: absolute;
+  top: 40px;
+  left: 20%;
+}
+
+.display .table .table-1 {
+  text-align: center;
+  width: 860px;
+}
+
+.display .table .table-1 th {
+  font-size: 19px;
+  padding-bottom: 20px;
+}
+
+.display .table .table-1 td {
+  padding-bottom: 15px;
+  font-size: 17px;
+}
+
+.items {
+  position: relative;
+  height: 500px;
+  margin-left: -160px;
+  width: 1100px;
+}
+
+.items .table-2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  left: 130px;
+  padding-bottom: 20px;
+  width: 840px;
+  text-align: center;
+}
+
+.items .table-2 tr td {
+  padding-bottom: 15px;
+  font-size: 17px;
+}
+
+.items .table-2 tr td img {
+  margin-right: -40px;
+  width: 100px;
+}
+
+.items .table-2 tr td a {
+  cursor: pointer;
+}
+
+.items .table-2 tr td a i {
+  position: absolute;
+  right: 0px;
+}
+
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+.total {
+  position: fixed;
+  display: block;
+  bottom: 0px;
+  z-index: 30;
+  width: 100vw;
+  right: 0;
+  height: 20%;
+  background-color: #f8efe4;
+}
+
+.total hr {
+  position: absolute;
+  top: 0px;
+  width: 200px;
+  right: 27%;
+}
+
+.total h3 {
+  position: absolute;
+  right: 30%;
+  font-weight: 500;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: absolute;
+  top: 20px;
+  font-size: 25px;
+}
+
+.total h3 .part1 {
+  top: -10px;
+  right: 10px;
+  font-size: 16px;
+  color: #868484;
+}
+
+.back {
+  position: absolute;
+  top: 30px;
+  left: 40px;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 17.5px;
+}
+
+.back:hover span {
+  left: -27px;
+}
+
+.back span {
+  position: absolute;
+  left: -20px;
+  top: -1px;
+  -webkit-transition: left .3s ease-in-out;
+  transition: left .3s ease-in-out;
+}
+/*# sourceMappingURL=cart.css.map */

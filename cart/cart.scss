@@ -1,0 +1,193 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fbf6f0;
+    overflow-x: hidden;
+    // overflow-y: hidden;
+}
+
+.svg {
+    position: absolute;
+    top: -138px;
+    left: -100px;
+    transform: rotateZ(-9deg);
+    z-index: -1;
+    width: 1900px;
+}
+
+.main {
+    // position: relative;
+    h1 {
+        margin-top: 70px;
+        margin-left: 70px;
+        color: #fbf6f0;
+        font-size: 50px;
+        padding-bottom: 35px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        border-bottom: 10px solid #fbf6f0;
+        width: 300px;
+    }
+    .refresh {
+        font-family: "Fira Sans", sans-serif;
+        font-size: 15.5px;
+        position: absolute;
+        top: 150px;
+        right: 100px;
+        text-decoration: none;
+        color: white;
+        border-radius: 3px;
+        letter-spacing: .5px;
+        z-index: 5;
+        padding: 10px 30px;
+        background: #056676;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.18);
+        &:active {
+            background: darken(#056676, 3px);
+        }
+    }
+    .refreshbar {
+        position: absolute;
+        right: 80px;
+        top: 0px;
+        width: 10px;
+        height: 20rem;
+        background: #f8efe4;
+    }
+    .refreshbar_2 {
+        position: absolute;
+        right: 40px;
+        top: 0px;
+        width: 10px;
+        height: 30rem;
+        background: #f8efe4;
+    }
+}
+
+.display {
+    position: relative;
+    // max-height: 100vh;
+    .table {
+        position: absolute;
+        top: 40px;
+        left: 20%;
+        .table-1 {
+            text-align: center;
+            width: 860px;
+            th {
+                font-size: 19px;
+                padding-bottom: 20px;
+                // position: fixed;
+            }
+            td {
+                // padding: 10px;
+                padding-bottom: 15px;
+                font-size: 17px;
+            }
+        }
+    }
+}
+
+.items {
+    // padding-bottom: 650px;
+    position: relative;
+    height: 500px;
+    margin-left: -160px;
+    // background-color: green;
+    width: 1100px;
+    // overflow-y: auto;
+    .table-2 {
+        display: block;
+        position: absolute;
+        z-index: 10;
+        left: 130px;
+        padding-bottom: 20px;
+        width: 840px;
+        text-align: center;
+        tr {
+            td {
+                // padding: 10px;
+                padding-bottom: 15px;
+                font-size: 17px;
+                img {
+                    // position: absolute;
+                    margin-right: -40px;
+                    width: 100px;
+                }
+                a {
+                    i {
+                        position: absolute;
+                        right: 0px;
+                    }
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+.items::-webkit-scrollbar {
+    display: none;
+}
+
+.total {
+    position: fixed;
+    display: block;
+    bottom: 0px;
+    z-index: 30;
+    width: 100vw;
+    right: 0;
+    height: 20%;
+    background-color: darken(#fbf6f0, 3%);
+    // border-top: 3.5px solid black;
+    hr {
+        position: absolute;
+        top: 0px;
+        width: 200px;
+        right: 27%;
+    }
+    h3 {
+        position: absolute;
+        right: 30%;
+        .part1 {
+            top: -10px;
+            right: 10px;
+            font-size: 16px;
+            color: rgb(134, 132, 132);
+        }
+        font-weight: 500;
+        font-family: 'Segoe UI',
+        Tahoma,
+        Geneva,
+        Verdana,
+        sans-serif;
+        position: absolute;
+        top: 20px;
+        font-size: 25px;
+    }
+}
+
+.back {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 17.5px;
+    &:hover {
+        & span {
+            left: -27px;
+        }
+    }
+    span {
+        position: absolute;
+        left: -20px;
+        top: -1px;
+        transition: left .3s ease-in-out;
+    }
+}
